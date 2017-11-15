@@ -138,10 +138,10 @@ angular.module('starter.controllers', [])
 .controller('YogaCtlr', function($scope,$http,$stateParams,$ionicModal){
             
             
-            $scope.modal = $ionicModal.fromTemplate('<div class="modal" ng-controller="FeedbackCtlr"><header class="bar bar-header bar-positive"> <h1 class="title">Feedback Form</h1><div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span></div></header><content has-header="true" padding="true"><div class = "list"><label class = "item item-input item-stacked-label"><br/><br/><span class = "input-label">Your Name</span><input ng-model="feedbackName" placeholder = "Your Name" /></label><label class = "item item-input item-stacked-label"><span class = "input-label">Your Email</span><input placeholder = "Your Email" ng-model="feedbackEmail" /></label><label class = "item item-input item-stacked-label"><span class = "input-label">Feedback</span><textarea placeholder="Write Comment" rows="8" cols="10" ng-model="feedbackMsg"></textarea></label><button class="button button-full" ng-click="submitFeedback()">Submit Feedback</button></div></div>', {
-                                     scope: $scope,
-                                     animation: 'slide-left-right'
-                                     });
+            $scope.modal = $ionicModal.fromTemplate('<div class="modal" ng-controller="FeedbackCtlr"><header class="bar bar-header bar-positive"> <h1 class="title">Feedback Form</h1><div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span></div></header><content has-header="true" padding="true"><div class = "list"><label class = "item item-input item-stacked-label"><br/><br/><span class = "input-label">Your Name</span><input ng-model="feedbackName" placeholder = "Your Name" /></label><label class = "item item-input item-stacked-label"><span class = "input-label">Your Email</span><input placeholder = "Your Email" ng-model="feedbackEmail" /></label><label class = "item item-input item-stacked-label"><span class = "input-label">Feedback</span><textarea placeholder="Write Comment" rows="8" cols="10" ng-model="feedbackMsg"></textarea></label><button class="button button-full" ng-click="submitFeedback()">Submit Feedback</button><br/><b><div style="left:4px;">&nbsp;&nbsp;Your Previous Feedbacks</b><ion-list><ion-item ng-repeat="item in mitems">{{item.message}}</ion-item></ion-list></div></div></div>', {
+                                                    scope: $scope,
+                                                    animation: 'slide-left-right'
+                                                    });
             
             dialogHandle = $scope.modal;
 
@@ -326,6 +326,28 @@ angular.module('starter.controllers', [])
 
 .controller('FeedbackCtlr', function($scope,$http,$stateParams){
             
+            $scope.$on('modal.shown', function() {
+                       console.log('Modal is shown!');
+                       $http({
+                             method: 'POST',
+                             url: 'https://0kvgk0xp4a.execute-api.us-east-1.amazonaws.com/prod/getFeedbackByContext',
+                             data: data
+                             }).then(function successCallback(response) {
+                                     // this callback will be called asynchronously
+                                     // when the response is available
+                                     console.log(JSON.stringify(response.data.Items));
+                                     $scope.mitems = response.data.Items;
+                                     //$scope.apply();
+                                     
+                                     }, function errorCallback(response) {
+                                     // called asynchronously if an error occurs
+                                     // or server returns response with an error status.
+                                     });
+                       
+                       
+                       
+            });
+            
             if(window.localStorage.getItem("USER")!=null){
                 $scope.feedbackName = window.localStorage.getItem("USER");
             }
@@ -333,17 +355,24 @@ angular.module('starter.controllers', [])
             if(window.localStorage.getItem("EMAIL")!=null){
                 $scope.feedbackEmail = window.localStorage.getItem("EMAIL");
             }
+            //alert("here");
+            var data={
+                identifier:$scope.feedbackName+"#"+$scope.feedbackEmail+"#"+selectedDisease+"#"+selectedYoga.name
+            
+            };
+           
+           
             
             $scope.submitFeedback = function(){
             window.localStorage.setItem("USER",$scope.feedbackName);
             window.localStorage.setItem("EMAIL",$scope.feedbackEmail);
             
             var data={
-                name:$scope.feedbackName,
-                email:$scope.feedbackEmail,
-                message:$scope.feedbackMsg,
-                disease: selectedDisease,
-                asana:selectedYoga.name
+            identifier:$scope.feedbackName+"#"+$scope.feedbackEmail+"#"+selectedDisease+"#"+selectedYoga.name,
+            
+                message:$scope.feedbackMsg
+            
+            
             
             };
             
@@ -352,7 +381,7 @@ angular.module('starter.controllers', [])
                     'Content-Type' : 'application/json'
             
                     }
-            }
+            };
             $http.post('https://0kvgk0xp4a.execute-api.us-east-1.amazonaws.com/prod/feedbackFunction', JSON.stringify(data));
             
             dialogHandle.hide();
