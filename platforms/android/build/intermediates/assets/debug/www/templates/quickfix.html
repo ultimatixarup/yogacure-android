@@ -1,0 +1,59 @@
+<ion-view view-title="Yoga List">
+   
+    <ion-content ng-controller="YogaListCtlr" ng-init="loadImages()">
+        <ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="loadImages()">
+        </ion-refresher>
+        
+        <ion-list >
+            
+            <ion-item>
+                <label class="item item-input">
+                    <i class="icon ion-search placeholder-icon"></i>
+                    <input type="text" ng-model="input.labelSearch" placeholder="Search">
+                        </label>
+            </ion-item><a class="button button-icon icon ion-android-sort" ng-click="sortItems()"></a>
+            
+            <ion-item ng-repeat="item in items | filter:input.labelSearch" class="item-text-wrap" href="#/app/fixes/{{item.name}}">
+                <div class="item item-thumbnail-left">
+                    <img src="{{ item.image }}" onerror="this.src='media/default.png';" />
+                        <h2>{{ item.label }}</h2>
+                        
+                        {{ item.description }}
+                        <!--Basic: auto-select the icon based on the platform -->
+                     </div>
+                        
+                        
+                       
+                
+            </ion-item>
+        </ion-list>
+
+         
+        
+       
+       
+        </ion-content>
+    <ion-nav-bar>
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    
+    
+    <ion-footer-bar>
+        <div style="width:30%;text-align:center"><a class="button button-icon icon ion-home" ui-sref="app.home"></a></div>
+        <div style="width:30%;text-align:center"><a ui-sref="app.faverites"><img src="img/my_favorites.png" style="height:40px;width:40px;"></a></div>
+        <div style="width:30%;text-align:center"><a class="button button-icon icon ion-information-circled" ui-sref="app.intro"></a></div>
+        <!--<a class="button button-icon icon ion-camera" ng-click="showAction()"></a>-->
+    </ion-footer-bar>
+</ion-view>
+<style>
+    .wordwrap {
+        white-space: pre-wrap;      /* CSS3 */
+        white-space: -moz-pre-wrap; /* Firefox */
+        white-space: -pre-wrap;     /* Opera <7 */
+        white-space: -o-pre-wrap;   /* Opera 7 */
+        word-wrap: break-word;      /* IE */
+    }
+</style>

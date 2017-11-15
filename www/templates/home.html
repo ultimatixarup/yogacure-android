@@ -1,0 +1,67 @@
+<ion-view view-title="Home">
+    <ion-content ng-controller="AppCtrl" ng-init="pushRegister()">
+        <ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="reload()">
+        </ion-refresher>
+       
+        <div>
+            
+            <div class="item item-text-wrap" style="height:100%;background: url('img/frontpage.jpg');background-repeat:round">
+                <div style="position:absolute;top:40%;left:15%">
+                    <a href="#/app/quickfix/15" class = "btn">
+                        Get Quick Relief
+                    </a>
+                    <br/>
+                    
+                </div>
+                <div style="position:absolute;top:50%;left:15%">
+                    <a href="#/app/quickfix/60" class = "btn">
+                        Get Cured
+                    </a>
+                    <br/>
+                    
+                </div>
+
+            </div>
+            
+        </div>
+        
+        
+    </ion-content>
+    <!-- <img src="http://bsswest.org/yogamedia/yoga-poster.jpg" height="100%" width="100%"> -->
+    <!-- <div style="height:100%;width:100%">
+     <video class="video" webkit-playsinline poster="http://bsswest.org/yogamedia/yoga-poster.jpg"><source src="http://bsswest.org/yogamedia/c8z43_blVQA.mp4"/></video>
+     
+     </div> -->
+    </ion-content>
+    <ion-footer-bar>
+        <div style="width:30%;text-align:center"><a class="button button-icon icon ion-home" ui-sref="app.home"></a></div>
+        <div style="width:30%;text-align:center"><a ui-sref="app.faverites"><img src="img/my_favorites.png" style="height:40px;width:40px;"></a></div>
+        <div style="width:30%;text-align:center"><a class="button button-icon icon ion-information-circled" ui-sref="app.intro"></a></div>
+        <!--<a class="button button-icon icon ion-camera" ng-click="showAction()"></a>-->
+    </ion-footer-bar>
+</ion-view>
+
+<style>
+    .btn {
+        background: #3498db;
+        background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+        background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+        background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+        background-image: -o-linear-gradient(top, #3498db, #2980b9);
+        background-image: linear-gradient(to bottom, #3498db, #2980b9);
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 28px;
+        font-family: Arial;
+        color: #ffffff;
+        font-size: 20px;
+        background: #3498db;
+        padding: 10px 20px 10px 20px;
+        text-decoration: none;
+    }
+
+
+
+</style>

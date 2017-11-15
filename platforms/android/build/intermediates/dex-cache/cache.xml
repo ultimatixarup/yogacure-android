@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/org.apache.cordova/CordovaLib/6.2.3/debug/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cd2af1a7180eb6427b58d868cd841d8212aca77e">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-6.2.3-debug_b8244320e64edb09371883ba494ac347124929e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/support-annotations-25.2.0_5e42d28770b71ffc050cab8a385bad6403cb4e10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.2.0_575322ca26c33039382f6e342890d1893f3f7abd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.2.0_66d112cfedcf79ec2eb17f42d0c003a644fbccfa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/com.android.support/support-compat/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.2.0_d2d922ff0fd62e6c8d4f04a61da6155775bb228f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v13/23.4.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2bf893856577f5038c0b8007a43fda3b3c5beb23">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-v13-23.4.0_5e2ab4c5df9afe15281c2ec8a261bcc80d8b42a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-11.0.4_d7bba2fad9a99a9a67ed6aaae9ce4f7313745a1f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.2.0_f1c12db39ffa83f931d2056fbee41f900c2534c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v13/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="be09545b7e6ff322c7286d2e80bed3b75b76c529">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_2a9a3b860d0cde36e3ab2bac3989ac1823eba3a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/com.android.support/support-fragment/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.2.0_9fd6c8d26e62de242e300bfa2b9739bb26f2f30d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-11.0.4_612f728e71b9a2a7ec2073be8fd2a4171aa2e0a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.2.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.2.0_7826bf97842f8ff499b66f87c2c24097aa4fa619.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d8942ee348aaa9341f08f7e2437063893fe27542">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-gcm-11.0.4_afaa7cc7e3b95e0dd6bda28dfeb68f911b2b1f0f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/me.leolin/ShortcutBadger/1.1.14/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="ea0f6c95c45bdb476e5f3803a00548d1e67dd3dd">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/me.leolin-ShortcutBadger-1.1.14_59fcf5cc13bf4d1fa18206c4d955c025ad0c4cc2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-11.0.4_de338c10ae3ef131e62b22444c27adad90d0c0b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/exploded-aar/com.google.android.gms/play-services-iid/11.0.4/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="dd282bdeaa904c59d77e57dedd7e0a241c9b679d">
+        <dex dex="/Users/arupbanerjee/petprojecg/yanges_android/platforms/android/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-iid-11.0.4_c0e4a4e27e2835a23f1c7d9108687d8a64ec758f.jar" />
+    </item>
+
+</items>

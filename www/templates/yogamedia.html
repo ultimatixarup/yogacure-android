@@ -1,0 +1,56 @@
+<ion-view view-title="Fix" cache-view="false">
+    
+        <ion-content ng-controller="YogaCtlr">
+            
+          <div id="switch">
+          <ion-toggle ng-model="easyMode" ng-click="changeVid()" toggle-class="toggle-calm">Supported Mode</ion-toggle>
+          </div>
+          <div id="switch_b" style="height:55px" >
+              
+          </div>
+          <div id="videoArea" style="height:50%;width:100%;">
+              <a ng-click="playVid()">
+                  <img src="{{ imgSrc }}" style="height:100%;width:100%" onerror="this.src='media/default.png';" />
+                  
+                  <!--<div class="item item-text-wrap" ng-style="style"> -->
+                  <div style="top:35%;left:1%;position:absolute"><img style="height:50px;width:50px;opacity: 0.9" src="icons/playicon.PNG"></div></a>
+          </div>
+          </div>
+          <div style="margin-left:4px;margin-top:4px;">
+              <a ng-click="addToFav()"><button class="button button-full">{{ favLabel }}</button></a>
+              
+               <a ng-click="modal.show()"><button class="button button-full">Provide Feedback</button></a>
+          </div>
+          
+          <div style="margin-left:4px;margin-right:4px;overflow-y:scroll">
+            
+            <b>Simple practice rules:</b>
+            <ul>
+            <li>Keep Yourself hydrated</li>
+            <li>Yoga practices should not be done after meals. 4 hours after big meal and 2 hours after snack.</li>
+            <li>Put a smile on your face</li>
+            <li>For most Asanas keep your eyes closed, there are exceptions we will point those out</li>
+            <li>Focus on the area having pain or discomfort</li>
+            <li>Focus on your breath especially the breath and pranic flow based postures</li>
+            <li>Be aware of your current moment; don’t let your mind fly</li>
+            <li>Along with asanas, focus on healthy diet</li>
+            <li>As need always consult your physician before, during and after your Yoga practices</li>
+            </ul>
+            
+            </div>
+          
+        </ion-content>
+        
+        <ion-nav-bar>
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+        </ion-nav-bar>
+        
+        <ion-footer-bar>
+            <div style="width:30%;text-align:center"><a class="button button-icon icon ion-home" ui-sref="app.home"></a></div>
+            <div style="width:30%;text-align:center"><a ui-sref="app.faverites"><img src="img/my_favorites.png" style="height:40px;width:40px;"></a></div>
+            <div style="width:30%;text-align:center"><a class="button button-icon icon ion-information-circled" ui-sref="app.intro"></a></div>
+            <!--<a class="button button-icon icon ion-camera" ng-click="showAction()"></a>-->
+        </ion-footer-bar>
+
+</ion-view>

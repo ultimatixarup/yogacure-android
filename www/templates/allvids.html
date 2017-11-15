@@ -1,0 +1,39 @@
+<ion-view view-title="Yoga List">
+    
+    <ion-content ng-controller="AllVidCtlr" ng-init="loadImages()">
+        <ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="loadImages()">
+        </ion-refresher>
+        
+        
+        
+        <ion-list >
+            
+            
+            
+            <ion-item ng-repeat="item in items" href="#/app/media/{{item.data}}">
+                <div class="item item-thumbnail-left">
+                    <img src="{{ item.image }}">
+                        <h3>{{ item.label }}</h3>
+                        <h2>{{ item.type }}</h2>
+                        <h3>{{ item.description }}</h3>
+                        <!--Basic: auto-select the icon based on the platform -->
+                        
+                        
+                        
+                        </div>
+                
+            </ion-item>
+        </ion-list>
+        
+    </ion-content>
+    
+    <ion-footer-bar>
+        <div style="width:30%;text-align:center"><a class="button button-icon icon ion-home" ui-sref="app.home"></a></div>
+        <div style="width:30%;text-align:center"><a ui-sref="app.faverites"><img src="img/my_favorites.png" style="height:40px;width:40px;"></a></div>
+        <div style="width:30%;text-align:center"><a class="button button-icon icon ion-information-circled" ui-sref="app.intro"></a></div>
+        <!--<a class="button button-icon icon ion-camera" ng-click="showAction()"></a>-->
+    </ion-footer-bar>
+    
+</ion-view>

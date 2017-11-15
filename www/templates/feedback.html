@@ -1,0 +1,17 @@
+<ion-view view-title="Feedback" cache-view="false">
+    
+        <ion-content ng-controller="FeedbackCtlr">
+          
+         <div class="modal"><header class="bar bar-header bar-positive"> <h1 class="title">Feedback Form</h1><div class="button button-clear" ng-click="modal.hide()"><span class="icon ion-close"></span></div></header><content has-header="true" padding="true"><div class = "list"><label class = "item item-input item-stacked-label"><br/><br/><span class = "input-label">Your Name</span><input type = "text" ng-model="feedbackName" placeholder = "Your Name" /></label><label class = "item item-input item-stacked-label"><span class = "input-label">Your Email</span><input type = "text" placeholder = "Your Email" ng-model="feedbackEmail" /></label><label class = "item item-input item-stacked-label"><span class = "input-label">Feedback</span><textarea placeholder="Write Comment" rows="8" cols="10"></textarea></label><button class="button button-full" ng-click="submitFeedback()">Submit Feedback</button></div></div>
+          
+          
+        </ion-content>
+        
+        <ion-nav-bar>
+            <ion-nav-back-button>
+            </ion-nav-back-button>
+        </ion-nav-bar>
+        
+       
+
+</ion-view>

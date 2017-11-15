@@ -1,0 +1,40 @@
+<ion-view view-title="Yoga List">
+    
+    <ion-content ng-controller="ViewDetailsCtlr" ng-init="loadData()">
+        <ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="loadData()">
+        </ion-refresher>
+        
+        
+    
+        
+        <ion-list >
+        
+         
+        
+          <ion-item auto-list-divider auto-list-divider-value="{{item.type}}" ng-repeat="item in items" class="item-text-wrap" ng-click="goToMediaPage('{{item.name}}','{{item.data}}','{{item.easyvid}}','{{ item.label }}','{{ item.type }}','{{ item.icon }}','{{ item.description }}')">
+            <div class="item item-thumbnail-left">
+               <img src="{{ item.image }}" onerror="this.src='media/default.png';" />
+              <h2>{{ item.label }}</h2>
+              <div style="word-wrap: break-word;">{{ item.description }}</div>
+               <!--Basic: auto-select the icon based on the platform -->
+             
+
+  
+            </div>
+            
+          </ion-item>
+        </ion-list>
+        
+        
+        </ion-content>
+        
+        <ion-footer-bar>
+            <div style="width:30%;text-align:center"><a class="button button-icon icon ion-home" ui-sref="app.home"></a></div>
+            <div style="width:30%;text-align:center"><a ui-sref="app.faverites"><img src="img/my_favorites.png" style="height:40px;width:40px;"></a></div>
+            <div style="width:30%;text-align:center"><a class="button button-icon icon ion-information-circled" ui-sref="app.intro"></a></div>
+            <!--<a class="button button-icon icon ion-camera" ng-click="showAction()"></a>-->
+        </ion-footer-bar>
+
+</ion-view>

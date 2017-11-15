@@ -1,0 +1,50 @@
+<ion-view view-title="Yoga List">
+    
+    <ion-content ng-controller="YogaListCtlr" ng-init="loadImages()">
+        <ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="loadImages()">
+        </ion-refresher>
+        <filter-box placeholder="Enter Ailment" filtertext="search"></filter-box>
+        <ion-list >
+            
+            
+            
+            <ion-item ng-repeat="item in items | filter: {name: search.value}">
+                <div class="item item-thumbnail-left">
+                    <img src="{{ item.image }}">
+                        <h3>{{ item.label }}</h3>
+                        <h3>{{ item.description }}</h3>
+                        <a class="button button-icon icon ion-archive" ng-click='download("{{ item.name }}")'></a>
+                        </div>
+            </ion-item>
+        </ion-list>
+        <!--<div class="list">
+         
+         <a ng-repeat="item in items"
+         href="#/app/fixes/{{item.name}}"
+         class="item item-thumbnail-left">
+         
+         
+         <img ng-src="{{ item.image }}">
+         <h2>{{ item.name }}</h2>
+         <h2>{{ item.type }}</h2>
+         <div style="height:20%;width:80%;word-break:break-all; word-wrap:break-word;white-space: -moz-pre-wrap;"><h4>{{ item.description }}</h4></div>
+         
+         </a>
+         
+         </div> -->
+    </ion-content>
+    <ion-nav-bar>
+        <ion-nav-back-button>
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    
+    
+    <ion-footer-bar>
+        <div style="width:30%;text-align:center"><a class="button button-icon icon ion-home" ui-sref="app.home"></a></div>
+        <div style="width:30%;text-align:center"><a class="button button-icon icon ion-arrow-swap" ui-sref="app.feedback"></a></div>
+        <div style="width:30%;text-align:center"><a class="button button-icon icon ion-information-circled" ui-sref="app.intro"></a></div>
+    </ion-footer-bar>
+    
+</ion-view>
